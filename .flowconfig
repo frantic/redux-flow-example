@@ -1,0 +1,9 @@
+[ignore]
+# Temporary workaround
+.*node_modules/fbjs/.*
+
+[include]
+
+[libs]
+
+[options]

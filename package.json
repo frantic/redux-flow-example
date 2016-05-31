@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
