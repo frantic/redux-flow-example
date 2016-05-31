@@ -1,8 +1,17 @@
+// @flow
+
 import React from 'react';
 import {logIn, logOut} from './actions';
 import {connect} from 'react-redux';
 
-export function SettingsScreen(props) {
+import type {Dispatch} from './store';
+
+type Props = {
+  userName: string;
+  dispatch: Dispatch;
+};
+
+export function SettingsScreen(props: Props) {
   return (
     <div>
       <div>
