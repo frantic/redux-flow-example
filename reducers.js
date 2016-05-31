@@ -1,5 +1,7 @@
 // @flow
 
+import type {Action} from './actions';
+
 type State = {
   isLoggedIn: boolean;
   userName: string;
