@@ -12,7 +12,7 @@ const initialState = {
   userName: 'unknown'
 };
 
-export function user(state: State = initialState, action: Object): State {
+export function user(state: State = initialState, action: Action): State {
   if (action.type === 'LOGGED_IN') {
     return {
       isLoggedIn: true,
