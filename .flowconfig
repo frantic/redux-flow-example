@@ -1,6 +1,4 @@
 [ignore]
-# Temporary workaround
-.*node_modules/fbjs/.*
 
 [include]
 
