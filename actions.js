@@ -14,7 +14,7 @@ function callAPI(endpoint, params) {
 }
 
 export async function logIn(login: string, pass: string): Promise<Action> {
-  const response = await callAPI('/login', login, pass);
+  const response = await callAPI('/login', {login, pass});
   if (!response.success) {
     throw new Error('Login failed');
   }

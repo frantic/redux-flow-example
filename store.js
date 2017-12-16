@@ -4,7 +4,7 @@ import * as Redux from 'redux';
 import * as reducers from './reducers';
 
 import type {Action} from './actions';
-export type Dispatch = (action: Action | Promise<Action>) => Promise;
+export type Dispatch = (action: Action | Promise<Action>) => Promise<*>;
 
 const promiseMiddleware = store => next => action =>
   typeof action.then === 'function'
